@@ -1,0 +1,22 @@
+File: release.test
+Type: alloc_objects
+Time: 2026-10-31 17:02:04 EDT
+Showing nodes accounting for 20930, 98.36% of 21279 total
+Dropped 177 nodes (cum <= 106)
+Showing top 15 nodes out of 24
+      flat  flat%   sum%        cum   cum%
+     17960 84.40% 84.40%      17960 84.40%  github.com/rezmoss/go-cloudip/internal/source.(*decoder).internedStr
+      2355 11.07% 95.47%       2355 11.07%  compress/flate.(*huffmanDecoder).init
+       315  1.48% 96.95%        315  1.48%  github.com/rezmoss/go-cloudip.newIndex.func3
+       245  1.15% 98.10%        620  2.91%  github.com/rezmoss/go-cloudip.newIndex
+        15  0.07% 98.17%      18006 84.62%  github.com/rezmoss/go-cloudip/internal/source.decodeDatabase
+        11 0.052% 98.22%      21106 99.19%  testing.(*B).runN
+        10 0.047% 98.27%      21046 98.91%  github.com/rezmoss/go-cloudip.NewDetector
+         6 0.028% 98.30%      17966 84.43%  github.com/rezmoss/go-cloudip/internal/source.(*decoder).ranges
+         5 0.023% 98.32%        625  2.94%  github.com/rezmoss/go-cloudip.buildState
+         5 0.023% 98.35%       2395 11.26%  github.com/rezmoss/go-cloudip/internal/source.Decompress
+         3 0.014% 98.36%        155  0.73%  testing.(*M).Run
+         0     0% 98.36%       2355 11.07%  bytes.(*Buffer).ReadFrom
+         0     0% 98.36%       2355 11.07%  compress/flate.(*decompressor).Read
+         0     0% 98.36%       2355 11.07%  compress/flate.(*decompressor).nextBlock
+         0     0% 98.36%       2355 11.07%  compress/flate.(*decompressor).readHuffman

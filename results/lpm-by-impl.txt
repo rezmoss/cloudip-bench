@@ -1,0 +1,107 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/cloudip-bench/lpm
+cpu: Apple M1 Max
+                                              │   cloudip    │                  bart                  │                bartfast                 │                cidranger                 │                  maplen                  │                    │
+                                              │    sec/op    │    sec/op      vs base                 │    sec/op     vs base                   │    sec/op     vs base                    │    sec/op     vs base                    │   sec/op     vs base   │
+Lookup/same-10                                  27.22n ±  1%    34.99n ±  1%   +28.50% (p=0.000 n=10)    22.38n ± 1%   -17.80% (p=0.000 n=10)     218.60n ± 2%   +702.94% (p=0.000 n=10)     149.35n ± 1%   +448.58% (p=0.000 n=10)
+Lookup/v4hit-10                                 60.57n ±  5%    69.75n ±  3%   +15.16% (p=0.000 n=10)    56.90n ± 7%    -6.07% (p=0.005 n=10)     978.00n ± 3%  +1514.66% (p=0.000 n=10)     158.70n ± 3%   +162.01% (p=0.000 n=10)
+Lookup/v4random-10                              16.70n ±  1%    21.95n ±  1%   +31.45% (p=0.000 n=10)    19.09n ± 1%   +14.35% (p=0.000 n=10)     133.70n ± 3%   +700.84% (p=0.000 n=10)     568.35n ± 2%  +3304.31% (p=0.000 n=10)
+Lookup/v4mix-10                                 45.18n ±  2%    54.50n ± 13%   +20.64% (p=0.000 n=10)    44.80n ± 2%         ~ (p=0.102 n=10)     591.50n ± 6%  +1209.35% (p=0.000 n=10)     381.10n ± 4%   +743.61% (p=0.000 n=10)
+Lookup/v6hit-10                                 118.2n ±  1%    179.5n ±  2%   +51.90% (p=0.000 n=10)    119.6n ± 2%    +1.18% (p=0.019 n=10)     1214.5n ± 6%   +927.50% (p=0.000 n=10)      705.3n ± 4%   +496.74% (p=0.000 n=10)
+IsCloud/same-10                                 4.660n ±  1%   13.455n ±  1%  +188.73% (p=0.000 n=10)    9.607n ± 1%  +106.15% (p=0.000 n=10)
+IsCloud/v4hit-10                                21.62n ±  1%    27.76n ±  1%   +28.37% (p=0.000 n=10)    18.84n ± 1%   -12.86% (p=0.000 n=10)
+IsCloud/v4random-10                             5.275n ±  1%   17.430n ±  1%  +230.43% (p=0.000 n=10)   14.125n ± 1%  +167.77% (p=0.000 n=10)
+IsCloud/v4mix-10                                19.15n ±  0%    25.60n ±  0%   +33.72% (p=0.000 n=10)    18.54n ± 1%    -3.16% (p=0.001 n=10)
+IsCloud/v6hit-10                                79.22n ±  1%   106.45n ±  4%   +34.36% (p=0.000 n=10)    63.29n ± 1%   -20.11% (p=0.000 n=10)
+String/v4hit-10                                 64.12n ±  3%   106.80n ±  4%   +66.56% (p=0.000 n=10)
+String/v4hit/netip.ParseAddr-10                                                                                                                                                                                                         28.31n ± 1%
+String/v4mix-10                                 57.12n ± 12%    89.68n ±  3%   +57.03% (p=0.000 n=10)
+String/v4mix/netip.ParseAddr-10                                                                                                                                                                                                         30.29n ± 1%
+String/v6hit-10                                 210.0n ±  1%    282.9n ±  4%   +34.74% (p=0.000 n=10)
+String/v6hit/netip.ParseAddr-10                                                                                                                                                                                                         93.94n ± 1%
+Parallel/v4mix-10                               5.509n ±  7%    6.378n ±  3%   +15.78% (p=0.000 n=10)    5.444n ± 2%         ~ (p=0.052 n=10)     78.250n ± 3%  +1320.53% (p=0.000 n=10)
+Startup-10                                      49.99m ±  1%    59.24m ±  1%   +18.51% (p=0.000 n=10)    60.75m ± 1%   +21.53% (p=0.000 n=10)     331.46m ± 1%   +563.04% (p=0.000 n=10)
+Startup/decode-msgpack-10                                                                                                                                                                                                               47.63m ± 1%
+Harness/direct-10                                                                                                                                                                                                                       44.33n ± 3%
+Harness/interface-10                                                                                                                                                                                                                    59.91n ± 1%
+Harness/direct/others-built-10                                                                                                                                                                                                          44.51n ± 1%
+Harness/interface/others-built-10                                                                                                                                                                                                       59.87n ± 2%
+Harness/direct/detector-built-after-others-10                                                                                                                                                                                           44.41n ± 3%
+geomean                                         78.22n          116.2n         +48.57%                   84.33n        +12.15%                ¹    2.452µ        +939.97%                ¹    324.9n        +655.62%                ¹   220.0n       ? ¹ ²
+¹ benchmark set differs from baseline; geomeans may not be comparable
+² ratios must be >0 to compute geomean
+
+                   │  cloudip   │                bart                 │              bartfast               │              cidranger              │               maplen                │
+                   │    hit%    │    hit%     vs base                 │    hit%     vs base                 │    hit%     vs base                 │    hit%     vs base                 │
+Lookup/same-10       100.0 ± 0%   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4hit-10      100.0 ± 0%   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4random-10   4.285 ± 0%   4.285 ± 0%       ~ (p=1.000 n=10) ¹   4.285 ± 0%       ~ (p=1.000 n=10) ¹   4.285 ± 0%       ~ (p=1.000 n=10) ¹   4.285 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4mix-10      52.15 ± 0%   52.15 ± 0%       ~ (p=1.000 n=10) ¹   52.15 ± 0%       ~ (p=1.000 n=10) ¹   52.15 ± 0%       ~ (p=1.000 n=10) ¹   52.15 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v6hit-10      100.0 ± 0%   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹   100.0 ± 0%       ~ (p=1.000 n=10) ¹
+geomean              46.76        46.76       +0.00%                    46.76       +0.00%                    46.76       +0.00%                    46.76       +0.00%
+¹ all samples are equal
+
+                                              │    cloudip     │                  bart                  │                bartfast                 │                cidranger                 │                maplen                 │                       │
+                                              │      B/op      │     B/op      vs base                  │     B/op      vs base                   │     B/op       vs base                   │    B/op     vs base                   │     B/op      vs base │
+Lookup/same-10                                     0.00 ± 0%        0.00 ± 0%        ~ (p=1.000 n=10) ¹      0.00 ± 0%       ~ (p=1.000 n=10) ¹        24.00 ± 0%         ? (p=0.000 n=10)      0.00 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4hit-10                                     0.0 ± 0%         0.0 ± 0%        ~ (p=1.000 n=10) ¹       0.0 ± 0%       ~ (p=1.000 n=10) ¹        106.0 ± 0%         ? (p=0.000 n=10)       0.0 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4random-10                                0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹        9.000 ± 0%         ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4mix-10                                    0.00 ± 0%        0.00 ± 0%        ~ (p=1.000 n=10) ¹      0.00 ± 0%       ~ (p=1.000 n=10) ¹        57.00 ± 0%         ? (p=0.000 n=10)      0.00 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v6hit-10                                    0.00 ± 0%        0.00 ± 0%        ~ (p=1.000 n=10) ¹      0.00 ± 0%       ~ (p=1.000 n=10) ¹        76.00 ± 0%         ? (p=0.000 n=10)      0.00 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/same-10                                   0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/v4hit-10                                  0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/v4random-10                               0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/v4mix-10                                  0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/v6hit-10                                  0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+String/v4hit-10                                   0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹
+String/v4hit/netip.ParseAddr-10                                                                                                                                                                                                          0.000 ± 0%
+String/v4mix-10                                   0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹
+String/v4mix/netip.ParseAddr-10                                                                                                                                                                                                          0.000 ± 0%
+String/v6hit-10                                   0.000 ± 0%       0.000 ± 0%        ~ (p=1.000 n=10) ¹
+String/v6hit/netip.ParseAddr-10                                                                                                                                                                                                          0.000 ± 0%
+Parallel/v4mix-10                                  0.00 ± 0%        0.00 ± 0%        ~ (p=1.000 n=10) ¹      0.00 ± 0%       ~ (p=1.000 n=10) ¹        57.00 ± 0%         ? (p=0.000 n=10)
+Startup-10                                      58.99Mi ± 0%     48.30Mi ± 0%  -18.12% (p=0.000 n=10)     53.89Mi ± 0%  -8.64% (p=0.000 n=10)       173.80Mi ± 0%  +194.65% (p=0.000 n=10)
+Startup/decode-msgpack-10                                                                                                                                                                                                              35.74Mi ± 0%
+Harness/direct-10                                                                                                                                                                                                                        0.000 ± 0%
+Harness/interface-10                                                                                                                                                                                                                     0.000 ± 0%
+Harness/direct/others-built-10                                                                                                                                                                                                           0.000 ± 0%
+Harness/interface/others-built-10                                                                                                                                                                                                        0.000 ± 0%
+Harness/direct/detector-built-after-others-10                                                                                                                                                                                            0.000 ± 0%
+geomean                                                      ²                  -1.32%                ²                 -0.75%                ³ ²      374.4       ?                       ³               +0.00%                ³ ²                 ? ³ ² ⁴
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean
+
+                                              │    cloudip    │                   bart                    │                  bartfast                   │                  cidranger                   │                maplen                 │                      │
+                                              │   allocs/op   │   allocs/op    vs base                    │   allocs/op    vs base                      │   allocs/op     vs base                      │ allocs/op   vs base                   │  allocs/op   vs base │
+Lookup/same-10                                   0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         3.000 ± 0%            ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4hit-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         5.000 ± 0%            ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4random-10                               0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         2.000 ± 0%            ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v4mix-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         4.000 ± 0%            ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup/v6hit-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         4.000 ± 0%            ? (p=0.000 n=10)     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+IsCloud/same-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹
+IsCloud/v4hit-10                                 0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹
+IsCloud/v4random-10                              0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹
+IsCloud/v4mix-10                                 0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹
+IsCloud/v6hit-10                                 0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹
+String/v4hit-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹
+String/v4hit/netip.ParseAddr-10                                                                                                                                                                                                                   0.000 ± 0%
+String/v4mix-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹
+String/v4mix/netip.ParseAddr-10                                                                                                                                                                                                                   0.000 ± 0%
+String/v6hit-10                                  0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹
+String/v6hit/netip.ParseAddr-10                                                                                                                                                                                                                   0.000 ± 0%
+Parallel/v4mix-10                                0.000 ± 0%        0.000 ± 0%          ~ (p=1.000 n=10) ¹      0.000 ± 0%          ~ (p=1.000 n=10) ¹         4.000 ± 0%            ? (p=0.000 n=10)
+Startup-10                                      4.250k ± 0%     304.597k ± 0%  +7066.99% (p=0.000 n=10)     304.597k ± 0%  +7066.99% (p=0.000 n=10)       7155.857k ± 0%  +168273.11% (p=0.000 n=10)
+Startup/decode-msgpack-10                                                                                                                                                                                                                        336.8k ± 0%
+Harness/direct-10                                                                                                                                                                                                                                 0.000 ± 0%
+Harness/interface-10                                                                                                                                                                                                                              0.000 ± 0%
+Harness/direct/others-built-10                                                                                                                                                                                                                    0.000 ± 0%
+Harness/interface/others-built-10                                                                                                                                                                                                                 0.000 ± 0%
+Harness/direct/detector-built-after-others-10                                                                                                                                                                                                     0.000 ± 0%
+geomean                                                     ²                    +32.95%                ²                    +42.76%                ³ ²       28.07       ?                          ³               +0.00%                ³ ²                ? ³ ² ⁴
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean

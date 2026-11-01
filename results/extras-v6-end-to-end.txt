@@ -1,0 +1,25 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+                      │   shipped   │               bisect                │
+                      │   sec/op    │    sec/op     vs base               │
+LookupAddr_IPv6Hit-10   112.4n ± 2%   109.6n ± 20%       ~ (p=0.469 n=10)
+Lookup_IPv6Hit-10       226.8n ± 3%   243.1n ±  2%  +7.21% (p=0.000 n=10)
+geomean                 159.6n        163.2n        +2.27%
+
+                      │   shipped    │               bisect                │
+                      │     B/op     │    B/op     vs base                 │
+LookupAddr_IPv6Hit-10   0.000 ± 0%     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup_IPv6Hit-10       0.000 ± 0%     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+geomean                            ²               +0.00%                ²
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+
+                      │   shipped    │               bisect                │
+                      │  allocs/op   │ allocs/op   vs base                 │
+LookupAddr_IPv6Hit-10   0.000 ± 0%     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+Lookup_IPv6Hit-10       0.000 ± 0%     0.000 ± 0%       ~ (p=1.000 n=10) ¹
+geomean                            ²               +0.00%                ²
+¹ all samples are equal
+² summaries must be >0 to compute geomean

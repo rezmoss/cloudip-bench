@@ -1,0 +1,13 @@
+--- PASS: TestMemory (3.91s)
+    lpm_test.go:110: 131624 rows, 83206 distinct prefixes, 660504 addresses checked against the oracle, 62527 answers with an inherited region
+--- PASS: TestRealSnapshot (15.58s)
+--- PASS: TestQueryEdges (0.95s)
+    lpm_test.go:240: 160 synthetic tables, 10486400 addresses checked, 959109 inherited regions
+--- PASS: TestSyntheticExhaustive (56.15s)
+    lpm_test.go:264: 332824 probes give the same answer after shuffling 131624 rows
+--- PASS: TestOrderIndependent (5.44s)
+--- PASS: TestInheritance (0.00s)
+    lpm_test.go:325: without inheritance the oracle disagrees on 43801 probes
+--- PASS: TestOracleWithoutInheritanceFails (2.29s)
+PASS
+ok  	github.com/rezmoss/cloudip-bench/lpm	85.681s

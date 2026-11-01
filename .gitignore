@@ -1,0 +1,7 @@
+*.test
+*.out
+/cloudip-lookup
+/answerdiff
+/benchtable
+results/*.out
+results/*.tsv

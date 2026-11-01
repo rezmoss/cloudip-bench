@@ -1,0 +1,636 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/cloudip-bench/lpm
+cpu: Apple M1 Max
+BenchmarkLookup/same/impl=cloudip-10         	42636219	        27.17 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44463999	        27.31 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44416136	        27.56 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44433746	        27.40 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44079901	        27.21 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	43721952	        27.20 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	43695086	        27.33 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44439781	        27.15 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	43873279	        27.15 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cloudip-10         	44076661	        27.24 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	33621136	        35.28 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34604320	        35.22 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34569098	        34.86 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34203096	        34.93 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34586035	        34.94 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34685422	        35.29 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34282285	        34.93 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34318725	        34.92 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	33959139	        35.03 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bart-10            	34615882	        35.17 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	53568938	        22.52 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	54426601	        22.30 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	53366738	        22.39 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	53025685	        22.31 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	53679667	        22.37 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	54544110	        22.32 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	54061868	        22.42 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	53395330	        22.42 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	52995826	        22.50 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=bartfast-10        	54203090	        22.32 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5244789	       222.5 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5575922	       215.8 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5569372	       217.9 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5596113	       215.9 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5527876	       222.2 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5456380	       220.4 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5384220	       220.1 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5400748	       218.9 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5565085	       218.3 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=cidranger-10       	 5518292	       218.1 ns/op	       100.0 hit%	      24 B/op	       3 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8033512	       149.4 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 7972622	       149.3 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8026842	       149.5 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8008477	       149.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8072246	       150.5 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8048686	       150.3 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8072366	       149.4 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8086005	       148.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8061009	       149.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/same/impl=maplen-10          	 8063230	       148.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	18820318	        65.47 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	18454830	        62.14 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	19876297	        60.11 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	18635420	        63.42 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	18010096	        59.88 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	19640978	        60.49 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	19141172	        59.88 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	19751731	        60.65 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	18586160	        59.48 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cloudip-10        	20061562	        62.10 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	17916241	        67.22 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	17074203	        70.87 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	15743829	        69.17 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	17138378	        69.93 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	15194016	        69.92 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	16576731	        69.19 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	16048743	        69.58 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	16913506	        67.98 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	16414783	        70.76 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bart-10           	16670920	        70.51 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	19347024	        60.93 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	22897904	        55.38 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	20914636	        60.52 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	22996233	        52.71 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	21793020	        57.61 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	21453648	        53.50 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	19387424	        60.06 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	20830891	        52.80 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	22895592	        57.73 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=bartfast-10       	19592955	        56.18 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1194553	      1014 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1281307	       958.2 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1236003	       979.7 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1000000	      1009 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1207651	      1010 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1226985	       971.2 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1287025	       950.9 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1245792	       958.1 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1228972	       989.0 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=cidranger-10      	 1227867	       976.3 ns/op	       100.0 hit%	     106 B/op	       5 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7434583	       155.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7328911	       158.5 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7890526	       153.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 6724651	       162.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7900750	       151.1 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 8162956	       164.1 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7668790	       156.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 6571279	       165.3 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 6903650	       158.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4hit/impl=maplen-10         	 7398378	       162.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	71558841	        16.70 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	70542241	        16.86 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	67863226	        16.66 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	71283597	        16.75 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	68204421	        16.84 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	70788975	        16.87 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	68946033	        16.69 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	71232469	        16.66 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	70303230	        16.67 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cloudip-10     	71322436	        16.67 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	53173516	        21.92 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	55145264	        21.82 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	52895086	        21.97 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	53550312	        22.07 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	54335113	        22.22 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	54519433	        21.90 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	52178071	        22.04 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	54207480	        21.78 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	54181372	        22.06 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bart-10        	53348744	        21.76 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	62175092	        19.20 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	61767844	        19.10 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	61687669	        19.34 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	60337767	        19.00 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	61902336	        19.15 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	62257887	        19.03 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	62321338	        19.08 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	60330811	        19.14 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	62251424	        19.08 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=bartfast-10    	61980268	        19.02 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 9150133	       135.4 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 8063533	       137.6 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 9349382	       134.2 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 8704484	       132.3 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 8980606	       129.6 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 8694766	       134.4 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 9253552	       129.0 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 9022575	       133.2 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 9281899	       131.3 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=cidranger-10   	 8875033	       135.6 ns/op	         4.285 hit%	       9 B/op	       2 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2100730	       561.7 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2081288	       576.6 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2142672	       562.3 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2121327	       574.2 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2169153	       556.7 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2136548	       570.7 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2175260	       553.4 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2082481	       578.8 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2047084	       571.5 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4random/impl=maplen-10      	 2138606	       566.0 ns/op	         4.285 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	24755432	        44.79 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	25856635	        45.10 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	26341519	        44.98 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	26899597	        45.16 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	26081522	        44.73 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	25841925	        45.30 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	24937764	        45.37 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	23305062	        45.98 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	25784317	        46.48 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cloudip-10        	26379013	        45.19 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	20709888	        54.03 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	23649746	        50.91 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	22192375	        53.28 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	22957956	        51.26 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	22346732	        56.22 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	22899615	        52.44 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	23564989	        54.97 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	17666348	        61.79 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	20070118	        62.82 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bart-10           	20239543	        59.43 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	28087038	        43.85 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	27651142	        43.42 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	27019014	        46.22 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	22842204	        43.79 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	27314344	        44.94 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	26522218	        45.81 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	27392715	        44.74 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	25884987	        44.86 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	27343909	        43.79 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=bartfast-10       	25969996	        45.28 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2068941	       595.5 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 1788075	       620.6 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2184956	       565.2 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 1998145	       594.0 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2179855	       552.3 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2059299	       589.0 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2158256	       565.7 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 1991439	       597.9 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2172204	       556.1 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=cidranger-10      	 2018922	       604.4 ns/op	        52.15 hit%	      57 B/op	       4 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3127346	       378.6 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 2918678	       399.0 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3276066	       377.8 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3205521	       394.9 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3063786	       377.7 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3060820	       390.7 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3217970	       381.2 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3289837	       381.0 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 2960269	       377.8 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v4mix/impl=maplen-10         	 3159854	       389.7 ns/op	        52.15 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	 9921686	       117.3 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10212902	       118.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	 9768960	       117.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10214895	       118.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10242045	       118.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10223845	       118.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10014412	       119.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10207078	       118.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	 9555414	       119.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cloudip-10        	10230745	       117.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6272990	       181.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6717117	       176.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6510529	       180.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6655630	       176.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6836446	       179.4 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6803598	       179.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6771796	       185.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6763666	       177.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6659908	       181.4 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bart-10           	 6583458	       178.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9963280	       122.5 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	10189264	       116.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9733050	       121.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	10030659	       119.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	10171639	       121.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9584090	       119.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9746594	       121.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9080140	       119.4 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	 9801278	       119.1 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=bartfast-10       	10125367	       118.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  916960	      1234 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  746996	      1542 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  862254	      1208 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  863722	      1293 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  866727	      1156 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  826455	      1221 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  983338	      1221 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  887190	      1208 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  877992	      1208 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=cidranger-10      	  895074	      1144 ns/op	       100.0 hit%	      76 B/op	       4 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1680477	       729.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1742226	       697.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1655206	       717.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1685354	       701.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1679091	       712.0 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1760780	       680.2 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1674427	       710.7 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1813711	       665.6 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1725934	       708.8 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkLookup/v6hit/impl=maplen-10         	 1736253	       691.9 ns/op	       100.0 hit%	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	256855269	         4.659 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	253464163	         4.673 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	257824272	         4.666 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	259567424	         4.630 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	258286952	         4.659 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	259090220	         4.628 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	258840177	         4.661 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	258555446	         4.638 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	250754985	         4.737 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=cloudip-10        	258487545	         4.680 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	89143939	        13.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	88399417	        13.41 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	89885673	        13.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	89870810	        13.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	87478164	        13.41 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	89194183	        13.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	90060508	        13.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	89011413	        13.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	88989690	        13.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bart-10           	87293092	        13.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	125537702	         9.558 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	124588032	         9.620 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	125579677	         9.557 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	124294160	         9.648 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	125509035	         9.592 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	123583689	         9.680 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	124555804	         9.645 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	124549647	         9.628 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	125160915	         9.588 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/same/impl=bartfast-10       	125107416	         9.593 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	54515098	        21.40 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	56309497	        21.90 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	55617782	        21.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	55716019	        21.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	50842969	        21.68 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	55499028	        21.81 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	54150708	        21.56 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	55883373	        21.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	54553099	        21.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=cloudip-10       	54917186	        21.66 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	42603991	        27.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	44045318	        27.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	42896847	        27.85 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	43219556	        27.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	42652827	        27.86 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	43971410	        27.65 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	41679691	        27.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	43681368	        27.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	43571665	        27.75 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bart-10          	43456282	        27.51 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	63170222	        19.07 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	60996530	        18.79 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	64006400	        19.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	63641766	        18.74 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	62178446	        19.08 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	63014452	        18.75 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	63802212	        18.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	63346546	        18.81 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	64152823	        18.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4hit/impl=bartfast-10      	61996144	        18.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	228881544	         5.314 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	226456432	         5.269 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	228289237	         5.263 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	226241144	         5.268 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	227730254	         5.273 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	225502465	         5.286 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	228551511	         5.269 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	226343454	         5.305 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	225940033	         5.277 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=cloudip-10    	224389345	         5.321 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	70218554	        17.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	67556155	        17.52 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	68437485	        17.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	69385887	        17.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	67686189	        17.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	70133059	        17.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	68385973	        17.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	69637038	        17.57 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	65512016	        17.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bart-10       	69161940	        17.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	84296052	        14.09 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	82943814	        14.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	84761223	        14.08 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	85225504	        14.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	84862628	        14.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	78860030	        14.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	83450197	        14.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	85071189	        14.15 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	84714604	        14.06 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4random/impl=bartfast-10   	84932205	        14.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	59869035	        19.17 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	61193786	        18.96 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	64136252	        19.27 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	63305887	        19.20 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	62863840	        19.20 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	63135325	        19.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	62292762	        19.20 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	60127267	        19.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	64421888	        19.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=cloudip-10       	64453321	        19.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46787425	        25.66 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46519741	        25.39 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	45465308	        25.89 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46435210	        25.70 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46845415	        25.57 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46748389	        25.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	47107393	        25.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46087152	        25.51 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	46546656	        25.61 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bart-10          	47170506	        25.68 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64615281	        18.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	65093571	        18.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	65122863	        18.67 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64620789	        18.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64879330	        18.53 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	63895351	        18.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64772666	        18.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64156826	        18.53 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64683781	        18.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v4mix/impl=bartfast-10      	64954690	        19.36 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	14436046	        81.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15330198	        79.26 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	14894797	        79.65 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15369984	        79.19 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	14158741	        79.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15264966	        79.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15336082	        78.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15328263	        79.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	15189744	        78.75 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=cloudip-10       	14986846	        79.61 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11204947	       105.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11353381	       107.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11185225	       106.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11367134	       106.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11177815	       111.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	10708870	       111.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	10534335	       106.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11424069	       106.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11407485	       105.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bart-10          	11370297	       105.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18801225	        63.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	19036035	        63.03 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18779808	        63.30 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	19108686	        63.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	19085878	        64.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18853558	        63.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18958792	        63.95 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18968332	        62.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	17592770	        65.21 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIsCloud/v6hit/impl=bartfast-10      	18821056	        63.85 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	17302566	        66.66 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18454900	        63.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	19411834	        65.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	19386627	        63.21 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18642960	        66.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	19267938	        63.07 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18895132	        64.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18362077	        63.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18609086	        65.09 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=cloudip-10        	18780578	        63.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11624658	       109.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11784340	       104.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11322236	       112.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11018132	       102.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	12030220	       110.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11582419	       103.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	12283078	       107.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11407363	       102.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	12217123	       109.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/impl=bart-10           	11259565	       106.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42878198	        28.27 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	40186195	        28.52 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	41858700	        28.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42313676	        28.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42424314	        28.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42758707	        28.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42668500	        28.25 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42833176	        28.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	40707058	        28.31 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4hit/netip.ParseAddr-10     	42899338	        28.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	21782454	        56.95 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	18206817	        57.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	21773858	        55.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	21695617	        57.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	21315254	        56.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	19955086	        64.99 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	18554524	        63.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	18095553	        64.19 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	20405719	        56.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=cloudip-10        	20990013	        58.23 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13220881	        87.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	14396623	        92.13 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13500590	        86.86 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13959087	        90.69 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13512258	        89.41 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13351839	        90.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	13270268	        89.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	14364404	        89.96 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	12519310	        88.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/impl=bart-10           	12050173	        92.63 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39778950	        30.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39604069	        30.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39953719	        30.25 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39756490	        30.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39663028	        30.21 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	38227974	        30.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39320089	        30.31 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	40051342	        30.57 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	38951659	        30.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v4mix/netip.ParseAddr-10     	39468543	        30.27 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5473214	       212.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5789446	       208.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5554140	       210.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5853196	       209.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5755135	       211.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5778440	       209.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5757764	       217.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5794048	       208.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5748543	       212.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=cloudip-10        	 5618052	       208.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4181265	       292.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4302222	       278.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 3944235	       289.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4250708	       277.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4208946	       284.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4153611	       280.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4241298	       294.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4054879	       281.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4317031	       284.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/impl=bart-10           	 4109770	       281.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12732646	        94.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12571000	        93.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12867045	        93.81 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12697376	        93.90 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12864918	        93.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12724742	        94.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12812311	        93.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12751933	        94.86 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12807279	        93.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkString/v6hit/netip.ParseAddr-10     	12877908	        94.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	221413294	         5.525 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	210226803	         5.492 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	212720084	         5.455 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	220035382	         5.785 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	220684767	         5.777 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	214709461	         5.462 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	217168136	         6.053 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	214513570	         5.899 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	203225154	         5.488 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cloudip-10      	199262120	         5.482 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	180148261	         6.426 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	192140440	         6.386 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	190813154	         6.369 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	188828276	         6.266 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	186352210	         6.537 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	190961209	         6.671 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	190816213	         6.370 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	192309476	         6.314 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	185842456	         6.238 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bart-10         	187892481	         6.585 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	228031843	         5.417 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	201749602	         5.507 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	221375528	         5.318 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	229046936	         5.509 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	224430909	         5.348 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	224741792	         5.544 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	210918194	         5.601 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	228739897	         5.472 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	227532920	         5.409 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=bartfast-10     	221716260	         5.255 ns/op	       0 B/op	       0 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16561213	        77.49 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16640934	        80.93 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16558708	        78.91 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	15526822	        77.59 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16615914	        76.47 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	13185417	        77.10 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16169882	        78.98 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16869480	        76.89 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16100979	        79.73 ns/op	      57 B/op	       4 allocs/op
+BenchmarkParallel/v4mix/impl=cidranger-10    	16508583	        80.34 ns/op	      57 B/op	       4 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49979812 ns/op	61875028 B/op	    4251 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49617585 ns/op	61863856 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      24	  50023477 ns/op	61846886 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  50042949 ns/op	61853396 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49641803 ns/op	61851920 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49942795 ns/op	61845200 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49856309 ns/op	61824325 B/op	    4249 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  49999992 ns/op	61848928 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  50202729 ns/op	61848196 B/op	    4250 allocs/op
+BenchmarkStartup/impl=cloudip-10             	      22	  50123930 ns/op	61851915 B/op	    4250 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47273267 ns/op	37475622 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      25	  48045675 ns/op	37475553 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47701073 ns/op	37475658 B/op	  336778 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47417561 ns/op	37475640 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47458188 ns/op	37475618 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      25	  47857940 ns/op	37475611 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47743234 ns/op	37475575 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      25	  47744657 ns/op	37475611 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47557090 ns/op	37475638 B/op	  336777 allocs/op
+BenchmarkStartup/decode-msgpack-10           	      24	  47288865 ns/op	37475626 B/op	  336777 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59128741 ns/op	50641255 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  58798868 ns/op	50641057 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      20	  59427417 ns/op	50641141 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      20	  59020196 ns/op	50641230 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59473838 ns/op	50641160 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59036421 ns/op	50641184 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59683838 ns/op	50641296 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      20	  59785100 ns/op	50641100 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59023568 ns/op	50641211 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bart-10                	      19	  59358715 ns/op	50641142 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60569186 ns/op	56506163 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60686055 ns/op	56506154 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60408202 ns/op	56506053 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  61554228 ns/op	56506158 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60522311 ns/op	56506113 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  61460555 ns/op	56506187 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60306386 ns/op	56506058 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  60823515 ns/op	56506307 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      19	  61585610 ns/op	56506099 B/op	  304597 allocs/op
+BenchmarkStartup/impl=bartfast-10            	      18	  62175431 ns/op	56506018 B/op	  304597 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 331772021 ns/op	182239384 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 331138781 ns/op	182239492 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 332539156 ns/op	182239660 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 332582948 ns/op	182239420 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       3	 345628583 ns/op	182239405 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 330057636 ns/op	182239412 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 328982833 ns/op	182239396 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 329859031 ns/op	182239528 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 328225646 ns/op	182239496 B/op	 7155857 allocs/op
+BenchmarkStartup/impl=cidranger-10           	       4	 332057729 ns/op	182239564 B/op	 7155857 allocs/op
+BenchmarkHarness/direct-10    	26202804	        44.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27595219	        44.03 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27518018	        44.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27638784	        44.30 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	24533647	        44.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27224104	        44.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	26629311	        44.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	23611512	        45.15 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	25768513	        45.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27411602	        45.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	18999202	        60.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20150427	        59.35 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20539972	        60.90 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20570400	        59.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19823160	        59.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20368340	        60.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20159638	        59.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20219194	        60.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19635973	        60.71 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19597195	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26388342	        44.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26345278	        44.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27318231	        44.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26864793	        44.88 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26320815	        43.99 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27415594	        44.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27334280	        46.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27026874	        44.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26829381	        44.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	25809990	        44.76 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20336914	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20277877	        60.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20144592	        60.97 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19651164	        59.65 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19997554	        60.25 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20144169	        59.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19783520	        59.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19528680	        60.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19649246	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19930230	        59.38 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26661433	        45.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	23859942	        44.45 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26601271	        44.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26862288	        44.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27351153	        44.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27071994	        44.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26144360	        44.80 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27310640	        44.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27241177	        45.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	23697072	        50.83 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/cloudip-bench/lpm	778.092s

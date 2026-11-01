@@ -1,0 +1,22 @@
+File: release.test
+Type: alloc_objects
+Time: 2026-10-31 17:00:08 EDT
+Showing nodes accounting for 62341939, 100% of 62344845 total
+Dropped 233 nodes (cum <= 311724)
+Showing top 15 nodes out of 38
+      flat  flat%   sum%        cum   cum%
+  24881000 39.91% 39.91%   50377001 80.80%  net.(*IPNet).String
+  24121357 38.69% 78.60%   24121357 38.69%  net.IP.String
+   3446730  5.53% 84.13%    5275593  8.46%  net.ParseCIDR
+   1974064  3.17% 87.29%    1974064  3.17%  github.com/yl2chen/cidranger/net.NewNetworkNumber
+   1928987  3.09% 90.39%    1928987  3.09%  net.IP.Mask
+   1599300  2.57% 92.95%    5475872  8.78%  github.com/yl2chen/cidranger.newPrefixTree
+   1545580  2.48% 95.43%    1545580  2.48%  github.com/vmihailenco/msgpack/v5.(*Decoder).stringWithLen (inline)
+   1374644  2.20% 97.64%    1374644  2.20%  internal/strconv.FormatInt
+    812120  1.30% 98.94%     812120  1.30%  net.CIDRMask (inline)
+    658130  1.06%   100%   60796337 97.52%  github.com/rezmoss/go-cloudip.buildState
+        12 1.9e-05%   100%   62344665   100%  testing.(*B).runN
+        10 1.6e-05%   100%   62344608   100%  github.com/rezmoss/go-cloudip.NewDetector
+         5 8e-06%   100%    1548251  2.48%  github.com/rezmoss/go-cloudip/internal/source.ParseDatabase
+         0     0%   100%   62344608   100%  github.com/rezmoss/cloudip-bench/release.BenchmarkNewDetector
+         0     0%   100%   62344588   100%  github.com/rezmoss/go-cloudip.(*Detector).loadInitialData

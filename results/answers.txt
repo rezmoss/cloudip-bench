@@ -1,0 +1,23 @@
+188220 addresses compared
+
+same             106775   56.7%
+service           10139    5.4%
+region            25625   13.6%
+service+region    45681   24.3%
+prefix                0    0.0%
+found                 0    0.0%
+
+service changed (service/region, old -> new):
+  1.178.1.0        1.178.1.0/24       "AMAZON"/"us-west-2" -> "EC2"/"us-west-2"
+  1.178.10.0       1.178.10.0/24      "AMAZON"/"eu-central-1" -> "EC2"/"eu-central-1"
+  1.178.100.0      1.178.100.0/24     "S3"/"us-west-1" -> "EC2"/"us-west-1"
+
+region changed (service/region, old -> new):
+  102.133.122.192  102.133.122.192/27 "SQLMANAGEMENT"/"" -> "SQLMANAGEMENT"/"southafricanorth"
+  102.133.123.192  102.133.123.192/27 "SQLMANAGEMENT"/"" -> "SQLMANAGEMENT"/"southafricanorth"
+  102.133.123.248  102.133.123.248/29 "COGNITIVESERVICESMANAGEMENT"/"" -> "COGNITIVESERVICESMANAGEMENT"/"southafricanorth"
+
+service+region changed (service/region, old -> new):
+  102.133.1.24     102.133.1.24/32    "POWERPLATFORMINFRA"/"" -> "POWERPLATFORMINFRA.SOUTHAFRICAWEST"/"southafricawest"
+  102.133.122.0    102.133.122.0/26   "AZURECOSMOSDB"/"" -> "AZURECOSMOSDB.SOUTHAFRICANORTH"/"southafricanorth"
+  102.133.122.144  102.133.122.144/29 "AZURECONTAINERREGISTRY"/"" -> "AZURECONTAINERREGISTRY.SOUTHAFRICANORTH"/"southafricanorth"

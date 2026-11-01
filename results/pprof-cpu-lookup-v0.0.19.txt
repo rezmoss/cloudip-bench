@@ -1,0 +1,23 @@
+File: release.test
+Type: cpu
+Time: 2026-10-31 17:19:35 EDT
+Duration: 4.69s, Total samples = 4490ms (95.79%)
+Showing nodes accounting for 3610ms, 80.40% of 4490ms total
+Dropped 67 nodes (cum <= 22.45ms)
+Showing top 15 nodes out of 137
+      flat  flat%   sum%        cum   cum%
+     900ms 20.04% 20.04%      910ms 20.27%  github.com/yl2chen/cidranger/net.Network.Contains (inline)
+     890ms 19.82% 39.87%     2400ms 53.45%  github.com/yl2chen/cidranger.(*prefixTrie).containingNetworks
+     700ms 15.59% 55.46%      700ms 15.59%  runtime.madvise
+     190ms  4.23% 59.69%      190ms  4.23%  runtime.memclrNoHeapPointers
+     180ms  4.01% 63.70%      180ms  4.01%  net.simpleMaskLength (inline)
+     110ms  2.45% 66.15%      110ms  2.45%  runtime.pthread_cond_signal
+     100ms  2.23% 68.37%      100ms  2.23%  runtime.(*gcBits).bytep (inline)
+      90ms  2.00% 70.38%     2750ms 61.25%  github.com/rezmoss/go-cloudip.(*Detector).LookupAddr
+      80ms  1.78% 72.16%       80ms  1.78%  runtime.pthread_cond_wait
+      80ms  1.78% 73.94%       90ms  2.00%  runtime.tryDeferToSpanScan
+      70ms  1.56% 75.50%      850ms 18.93%  runtime.mallocgc
+      60ms  1.34% 76.84%       60ms  1.34%  runtime.(*mspan).init
+      60ms  1.34% 78.17%      130ms  2.90%  runtime.mallocgcTiny
+      50ms  1.11% 79.29%       50ms  1.11%  bytes.(*Reader).ReadByte
+      50ms  1.11% 80.40%      530ms 11.80%  runtime.mallocgcSmallScanNoHeader

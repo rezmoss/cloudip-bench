@@ -1,0 +1,160 @@
+// Internal measurements for go-cloudip v0.0.20. They need unexported
+// identifiers, so they can't live in this module: copy this file into a
+// go-cloudip v0.0.20 checkout as index_probe_test.go and run
+//
+//	go test -run Shape -v .
+//	go test -run '^$' -bench 'Probe' -count 10 .
+
+package cloudip
+
+import (
+	"net/netip"
+	"slices"
+	"testing"
+)
+
+// TestShape prints how the IPv4 directory splits the address space.
+func TestShape(t *testing.T) {
+	ix := mustIndex(t, embeddedDB(t))
+	var leaf, sub, span int
+	for _, d := range ix.dir4 {
+		switch {
+		case d&dirLeaf != 0:
+			leaf++
+		case d&dirSub != 0:
+			sub++
+		default:
+			span++
+		}
+	}
+	t.Logf("segments: %d IPv4, %d IPv6", len(ix.starts4), len(ix.starts6))
+	t.Logf("/16 blocks: %d leaf, %d span, %d with a /24 table (%d sub entries, %.1f MB)",
+		leaf, span, sub, len(ix.sub4), float64(len(ix.sub4)*8)/1e6)
+}
+
+// branchy: same directory, slices.BinarySearch inside the block.
+func (ix *index) lookup4Branchy(x uint32) uint64 {
+	d := ix.dir4[x>>16]
+	if d&dirSub != 0 {
+		d = ix.sub4[uint32(d)|x>>8&0xff]
+	}
+	if d&dirLeaf != 0 {
+		return d &^ dirLeaf
+	}
+	lo, hi := int(d>>32), int(uint32(d))
+	i, found := slices.BinarySearch(ix.starts4[lo:hi+1], x)
+	if !found {
+		i--
+	}
+	return ix.refs4[lo+i]
+}
+
+// flatOnly: no directory, binary search over every segment.
+func (ix *index) lookup4FlatOnly(x uint32) uint64 {
+	i, found := slices.BinarySearch(ix.starts4, x)
+	if !found {
+		i--
+	}
+	return ix.refs4[i]
+}
+
+// bisect6: plain branchless bisect over all IPv6 segments.
+func (ix *index) lookup6Bisect(x u128) uint64 {
+	return ix.refs6[search6(ix.starts6, 0, len(ix.starts6), x)]
+}
+
+var (
+	probeRef  uint64
+	probeIP4  uint32
+	probeAddr netip.Addr
+)
+
+func BenchmarkProbe(b *testing.B) {
+	db := embeddedDB(b)
+	ix := mustIndex(b, db)
+	as4 := func(a netip.Addr) uint32 {
+		v := a.As4()
+		return uint32(v[0])<<24 | uint32(v[1])<<16 | uint32(v[2])<<8 | uint32(v[3])
+	}
+	for _, set := range []struct {
+		name  string
+		addrs []netip.Addr
+	}{{"v4hit", hitAddrs(db, false)}, {"v4random", randomAddrs4()}} {
+		xs := make([]uint32, len(set.addrs))
+		for i, a := range set.addrs {
+			xs[i] = as4(a)
+			if ix.lookup4(xs[i]) != ix.lookup4Branchy(xs[i]) || ix.lookup4(xs[i]) != ix.lookup4FlatOnly(xs[i]) {
+				b.Fatal("variants disagree")
+			}
+		}
+		for _, v := range []struct {
+			name string
+			fn   func(uint32) uint64
+		}{{"shipped", ix.lookup4}, {"branchy", ix.lookup4Branchy}, {"flatonly", ix.lookup4FlatOnly}} {
+			b.Run(set.name+"/"+v.name, func(b *testing.B) {
+				for i := 0; b.Loop(); i++ {
+					probeRef = v.fn(xs[i&(benchN-1)])
+				}
+			})
+		}
+	}
+
+	h6 := hitAddrs(db, true)
+	x6 := make([]u128, len(h6))
+	for i, a := range h6 {
+		x6[i] = addrU128(a)
+		if ix.lookup6(x6[i]) != ix.lookup6Bisect(x6[i]) {
+			b.Fatal("v6 variants disagree")
+		}
+	}
+	for _, v := range []struct {
+		name string
+		fn   func(u128) uint64
+	}{{"shipped", ix.lookup6}, {"bisect", ix.lookup6Bisect}} {
+		b.Run("v6hit/"+v.name, func(b *testing.B) {
+			for i := 0; b.Loop(); i++ {
+				probeRef = v.fn(x6[i&(benchN-1)])
+			}
+		})
+	}
+
+	strs := make([]string, benchN)
+	for i, a := range hitAddrs(db, false) {
+		strs[i] = a.String()
+	}
+	b.Run("parse/parseIPv4", func(b *testing.B) {
+		for i := 0; b.Loop(); i++ {
+			probeIP4, _ = parseIPv4(strs[i&(benchN-1)])
+		}
+	})
+	b.Run("parse/netip.ParseAddr", func(b *testing.B) {
+		for i := 0; b.Loop(); i++ {
+			probeAddr, _ = netip.ParseAddr(strs[i&(benchN-1)])
+		}
+	})
+}
+
+// TestShapeSpans: widest search range left in the directory.
+func TestShapeSpans(t *testing.T) {
+	ix := mustIndex(t, embeddedDB(t))
+	span := func(d uint64) int { return int(uint32(d)) - int(d>>32) + 1 }
+	maxDir, maxSub, over8, subs := 0, 0, 0, 0
+	for _, d := range ix.dir4 {
+		if d&dirSub != 0 || d&dirLeaf != 0 {
+			continue
+		}
+		maxDir = max(maxDir, span(d))
+	}
+	for _, d := range ix.sub4 {
+		if d&dirLeaf != 0 {
+			continue
+		}
+		subs++
+		s := span(d)
+		maxSub = max(maxSub, s)
+		if s > 8 {
+			over8++
+		}
+	}
+	t.Logf("max /16 span %d; /24 range entries %d, max span %d, >8: %d", maxDir, subs, maxSub, over8)
+}

@@ -1,0 +1,5 @@
+    workload_test.go:21: same         1 distinct of 65536
+    workload_test.go:21: v4hit    56842 distinct of 65536
+    workload_test.go:21: v4random 65536 distinct of 65536
+    workload_test.go:21: v4mix    62922 distinct of 65536
+    workload_test.go:21: v6hit    62824 distinct of 65536

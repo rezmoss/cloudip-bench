@@ -1,0 +1,32 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/cloudip-bench/lpm
+cpu: Apple M1 Max
+                                              │ harness-raw.txt │
+                                              │     sec/op      │
+Harness/direct-10                                   44.33n ± 3%
+Harness/interface-10                                59.91n ± 1%
+Harness/direct/others-built-10                      44.51n ± 1%
+Harness/interface/others-built-10                   59.87n ± 2%
+Harness/direct/detector-built-after-others-10       44.41n ± 3%
+geomean                                             50.06n
+
+                                              │ harness-raw.txt │
+                                              │      B/op       │
+Harness/direct-10                                  0.000 ± 0%
+Harness/interface-10                               0.000 ± 0%
+Harness/direct/others-built-10                     0.000 ± 0%
+Harness/interface/others-built-10                  0.000 ± 0%
+Harness/direct/detector-built-after-others-10      0.000 ± 0%
+geomean                                                       ¹
+¹ summaries must be >0 to compute geomean
+
+                                              │ harness-raw.txt │
+                                              │    allocs/op    │
+Harness/direct-10                                  0.000 ± 0%
+Harness/interface-10                               0.000 ± 0%
+Harness/direct/others-built-10                     0.000 ± 0%
+Harness/interface/others-built-10                  0.000 ± 0%
+Harness/direct/detector-built-after-others-10      0.000 ± 0%
+geomean                                                       ¹
+¹ summaries must be >0 to compute geomean

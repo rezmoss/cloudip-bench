@@ -1,0 +1,3 @@
+    index_probe_test.go:30: segments: 78374 IPv4, 36272 IPv6
+    index_probe_test.go:31: /16 blocks: 63560 leaf, 824 span, 1152 with a /24 table (294912 sub entries, 2.4 MB)
+    index_probe_test.go:156: max /16 span 8; /24 range entries 13064, max span 140, >8: 1806

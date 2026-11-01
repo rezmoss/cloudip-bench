@@ -1,0 +1,4 @@
+    bench_test.go:221: bart         10.3 MB more live heap after build
+    bench_test.go:221: bartfast     16.1 MB more live heap after build
+    bench_test.go:221: cloudip       9.6 MB more live heap after build
+    bench_test.go:221: cidranger    50.5 MB more live heap after build

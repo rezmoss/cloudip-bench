@@ -1,0 +1,23 @@
+File: release.test
+Type: cpu
+Time: 2026-10-31 17:20:26 EDT
+Duration: 4.07s, Total samples = 3.54s (86.90%)
+Showing nodes accounting for 3.41s, 96.33% of 3.54s total
+Dropped 69 nodes (cum <= 0.02s)
+Showing top 15 nodes out of 53
+      flat  flat%   sum%        cum   cum%
+     1.33s 37.57% 37.57%      1.34s 37.85%  github.com/rezmoss/go-cloudip.(*index).lookup4
+     1.11s 31.36% 68.93%      2.91s 82.20%  github.com/rezmoss/go-cloudip.(*Detector).LookupAddr
+     0.30s  8.47% 77.40%      0.30s  8.47%  github.com/rezmoss/go-cloudip.(*index).result (inline)
+     0.20s  5.65% 83.05%      3.21s 90.68%  github.com/rezmoss/cloudip-bench/release.BenchmarkLookupAddr.func1
+     0.10s  2.82% 85.88%      0.10s  2.82%  testing.(*B).Loop (inline)
+     0.09s  2.54% 88.42%      0.09s  2.54%  runtime.pthread_cond_signal
+     0.08s  2.26% 90.68%      0.09s  2.54%  github.com/rezmoss/cloudip-bench/data/workload.Hits
+     0.07s  1.98% 92.66%      0.07s  1.98%  net/netip.Addr.Is4 (inline)
+     0.06s  1.69% 94.35%      1.49s 42.09%  github.com/rezmoss/go-cloudip.(*index).lookupAddr
+     0.02s  0.56% 94.92%      0.02s  0.56%  bytes.(*Reader).ReadByte
+     0.02s  0.56% 95.48%      0.02s  0.56%  net/netip.Addr.As4 (inline)
+     0.02s  0.56% 96.05%      0.02s  0.56%  runtime.memmove
+     0.01s  0.28% 96.33%      0.03s  0.85%  github.com/rezmoss/go-cloudip.newIndex
+         0     0% 96.33%      0.04s  1.13%  compress/flate.(*decompressor).Read
+         0     0% 96.33%      0.02s  0.56%  compress/flate.(*decompressor).huffSym

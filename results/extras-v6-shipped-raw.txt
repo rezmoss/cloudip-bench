@@ -1,0 +1,50 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+BenchmarkLookupAddr_IPv6Hit-10    	10818835	       112.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookupAddr_IPv6Hit-10    	10519917	       116.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5343406	       230.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 4920770	       240.9 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/go-cloudip	5.755s
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+BenchmarkLookupAddr_IPv6Hit-10    	10888118	       112.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookupAddr_IPv6Hit-10    	10537869	       112.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5401425	       222.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5246227	       227.4 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/go-cloudip	5.678s
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+BenchmarkLookupAddr_IPv6Hit-10    	10904191	       110.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookupAddr_IPv6Hit-10    	10483412	       113.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5177394	       226.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5362136	       222.2 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/go-cloudip	5.614s
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+BenchmarkLookupAddr_IPv6Hit-10    	10857050	       110.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookupAddr_IPv6Hit-10    	10511612	       111.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5477197	       224.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5321397	       221.9 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/go-cloudip	5.659s
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+BenchmarkLookupAddr_IPv6Hit-10    	10438639	       112.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookupAddr_IPv6Hit-10    	10365483	       112.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 5208477	       229.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLookup_IPv6Hit-10        	 4789627	       234.6 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rezmoss/go-cloudip	5.573s

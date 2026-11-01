@@ -1,0 +1,11 @@
+File: release.test
+Type: alloc_objects
+Time: 2026-10-31 17:19:15 EDT
+Showing nodes accounting for 62344844, 100% of 62344844 total
+----------------------------------------------------------+-------------
+      flat  flat%   sum%        cum   cum%   calls calls% + context 	 	 
+----------------------------------------------------------+-------------
+                                          50376995   100% |   github.com/yl2chen/cidranger/net.Network.Equal (inline)
+         0     0%     0%   50376995 80.80%                | github.com/yl2chen/cidranger/net.Network.String
+                                          50376995   100% |   net.(*IPNet).String
+----------------------------------------------------------+-------------

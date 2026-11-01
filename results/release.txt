@@ -1,0 +1,46 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/cloudip-bench/release
+cpu: Apple M1 Max
+                             │ release-v0.0.19.txt │         release-v0.0.20.txt          │
+                             │       sec/op        │    sec/op     vs base                │
+LookupAddr/same-10                    234.35n ± 0%   19.12n ±  1%  -91.84% (p=0.000 n=10)
+LookupAddr/v4hit-10                  1069.00n ± 4%   45.12n ± 15%  -95.78% (p=0.000 n=10)
+LookupAddr/v4random-10                136.10n ± 2%   11.73n ±  2%  -91.38% (p=0.000 n=10)
+LookupAddr/v4mix-10                   630.90n ± 3%   38.38n ± 17%  -93.92% (p=0.000 n=10)
+LookupAddr/v6hit-10                   1367.0n ± 4%   110.1n ±  1%  -91.94% (p=0.000 n=10)
+LookupString/v4hit-10                1106.50n ± 1%   65.11n ±  2%  -94.12% (p=0.000 n=10)
+LookupString/v6hit-10                 1481.0n ± 3%   211.9n ±  4%  -85.69% (p=0.000 n=10)
+IsCloudProviderAddr/v4mix-10          619.05n ± 4%   18.91n ±  3%  -96.95% (p=0.000 n=10)
+NewDetector-10                        741.36m ± 1%   49.23m ±  1%  -93.36% (p=0.000 n=10)
+geomean                                3.039µ        201.6n        -93.37%
+
+                             │ release-v0.0.19.txt │            release-v0.0.20.txt            │
+                             │        B/op         │     B/op      vs base                     │
+LookupAddr/same-10                      24.00 ± 0%      0.00 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4hit-10                     106.0 ± 0%       0.0 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4random-10                  9.000 ± 0%     0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4mix-10                     57.00 ± 0%      0.00 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v6hit-10                     76.00 ± 0%      0.00 ± 0%  -100.00% (p=0.000 n=10)
+LookupString/v4hit-10                   106.0 ± 0%       0.0 ± 0%  -100.00% (p=0.000 n=10)
+LookupString/v6hit-10                   76.00 ± 0%      0.00 ± 0%  -100.00% (p=0.000 n=10)
+IsCloudProviderAddr/v4mix-10            57.00 ± 0%      0.00 ± 0%  -100.00% (p=0.000 n=10)
+NewDetector-10                       300.44Mi ± 0%   58.98Mi ± 0%   -80.37% (p=0.000 n=10)
+geomean                                 289.6                      ?                       ¹ ²
+¹ summaries must be >0 to compute geomean
+² ratios must be >0 to compute geomean
+
+                             │ release-v0.0.19.txt │           release-v0.0.20.txt            │
+                             │      allocs/op      │  allocs/op   vs base                     │
+LookupAddr/same-10                      3.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4hit-10                     5.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4random-10                  2.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v4mix-10                     4.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupAddr/v6hit-10                     4.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupString/v4hit-10                   5.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+LookupString/v6hit-10                   4.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+IsCloudProviderAddr/v4mix-10            4.000 ± 0%    0.000 ± 0%  -100.00% (p=0.000 n=10)
+NewDetector-10                     15017.685k ± 0%   4.250k ± 0%   -99.97% (p=0.000 n=10)
+geomean                                 20.27                     ?                       ¹ ²
+¹ summaries must be >0 to compute geomean
+² ratios must be >0 to compute geomean

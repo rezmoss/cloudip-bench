@@ -1,0 +1,54 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/cloudip-bench/lpm
+cpu: Apple M1 Max
+BenchmarkHarness/direct-10    	26202804	        44.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27595219	        44.03 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27518018	        44.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27638784	        44.30 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	24533647	        44.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27224104	        44.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	26629311	        44.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	23611512	        45.15 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	25768513	        45.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct-10    	27411602	        45.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	18999202	        60.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20150427	        59.35 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20539972	        60.90 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20570400	        59.34 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19823160	        59.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20368340	        60.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20159638	        59.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	20219194	        60.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19635973	        60.71 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface-10 	19597195	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26388342	        44.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26345278	        44.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27318231	        44.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26864793	        44.88 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26320815	        43.99 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27415594	        44.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27334280	        46.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	27026874	        44.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	26829381	        44.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/others-built-10         	25809990	        44.76 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20336914	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20277877	        60.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20144592	        60.97 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19651164	        59.65 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19997554	        60.25 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	20144169	        59.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19783520	        59.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19528680	        60.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19649246	        59.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/interface/others-built-10      	19930230	        59.38 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26661433	        45.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	23859942	        44.45 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26601271	        44.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26862288	        44.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27351153	        44.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27071994	        44.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	26144360	        44.80 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27310640	        44.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	27241177	        45.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHarness/direct/detector-built-after-others-10         	23697072	        50.83 ns/op	       0 B/op	       0 allocs/op

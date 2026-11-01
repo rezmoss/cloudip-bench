@@ -1,0 +1,339 @@
+=== RUN   TestRealSnapshot
+    lpm_test.go:110: 131624 rows, 83206 distinct prefixes, 660504 addresses checked against the oracle, 62527 answers with an inherited region
+--- PASS: TestRealSnapshot (1.96s)
+=== RUN   TestQueryEdges
+--- PASS: TestQueryEdges (0.11s)
+=== RUN   TestSyntheticExhaustive
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/0
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/1
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/2
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/3
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/4
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/5
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/6
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/7
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/8
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/9
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/10
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/11
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/12
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/13
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/14
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/15
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/16
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/17
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/18
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/19
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/20
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/21
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/22
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/23
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/24
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/25
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/26
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/27
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/28
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/29
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/30
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/31
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/32
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/33
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/34
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/35
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/36
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/37
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/38
+=== RUN   TestSyntheticExhaustive/10.20.0.0/16/39
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/0
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/1
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/2
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/3
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/4
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/5
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/6
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/7
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/8
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/9
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/10
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/11
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/12
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/13
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/14
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/15
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/16
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/17
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/18
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/19
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/20
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/21
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/22
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/23
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/24
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/25
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/26
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/27
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/28
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/29
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/30
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/31
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/32
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/33
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/34
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/35
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/36
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/37
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/38
+=== RUN   TestSyntheticExhaustive/255.255.0.0/16/39
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/0
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/1
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/2
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/3
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/4
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/5
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/6
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/7
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/8
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/9
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/10
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/11
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/12
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/13
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/14
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/15
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/16
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/17
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/18
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/19
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/20
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/21
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/22
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/23
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/24
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/25
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/26
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/27
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/28
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/29
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/30
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/31
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/32
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/33
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/34
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/35
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/36
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/37
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/38
+=== RUN   TestSyntheticExhaustive/2001:db8::/112/39
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/0
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/1
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/2
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/3
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/4
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/5
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/6
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/7
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/8
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/9
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/10
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/11
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/12
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/13
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/14
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/15
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/16
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/17
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/18
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/19
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/20
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/21
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/22
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/23
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/24
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/25
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/26
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/27
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/28
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/29
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/30
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/31
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/32
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/33
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/34
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/35
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/36
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/37
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/38
+=== RUN   TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/39
+=== NAME  TestSyntheticExhaustive
+    lpm_test.go:240: 160 synthetic tables, 10486400 addresses checked, 959109 inherited regions
+--- PASS: TestSyntheticExhaustive (4.58s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/0 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/1 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/2 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/3 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/4 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/5 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/6 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/7 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/8 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/9 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/10 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/11 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/12 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/13 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/14 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/15 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/16 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/17 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/18 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/19 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/20 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/21 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/22 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/23 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/24 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/25 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/26 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/27 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/28 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/29 (0.03s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/30 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/31 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/32 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/33 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/34 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/35 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/36 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/37 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/38 (0.02s)
+    --- PASS: TestSyntheticExhaustive/10.20.0.0/16/39 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/0 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/1 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/2 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/3 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/4 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/5 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/6 (0.04s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/7 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/8 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/9 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/10 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/11 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/12 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/13 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/14 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/15 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/16 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/17 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/18 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/19 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/20 (0.04s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/21 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/22 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/23 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/24 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/25 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/26 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/27 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/28 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/29 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/30 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/31 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/32 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/33 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/34 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/35 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/36 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/37 (0.02s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/38 (0.03s)
+    --- PASS: TestSyntheticExhaustive/255.255.0.0/16/39 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/0 (0.06s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/1 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/2 (0.04s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/3 (0.08s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/4 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/5 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/6 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/7 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/8 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/9 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/10 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/11 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/12 (0.06s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/13 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/14 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/15 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/16 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/17 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/18 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/19 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/20 (0.06s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/21 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/22 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/23 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/24 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/25 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/26 (0.05s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/27 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/28 (0.08s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/29 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/30 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/31 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/32 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/33 (0.08s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/34 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/35 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/36 (0.08s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/37 (0.02s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/38 (0.03s)
+    --- PASS: TestSyntheticExhaustive/2001:db8::/112/39 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/0 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/1 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/2 (0.09s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/3 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/4 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/5 (0.08s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/6 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/7 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/8 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/9 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/10 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/11 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/12 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/13 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/14 (0.08s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/15 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/16 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/17 (0.08s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/18 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/19 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/20 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/21 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/22 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/23 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/24 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/25 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/26 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/27 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/28 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/29 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/30 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/31 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/32 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/33 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/34 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/35 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/36 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/37 (0.02s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/38 (0.03s)
+    --- PASS: TestSyntheticExhaustive/ffff:ffff:ffff:ffff:ffff:ffff:ffff:0/112/39 (0.03s)
+=== RUN   TestOrderIndependent
+    lpm_test.go:264: 332824 probes give the same answer after shuffling 131624 rows
+--- PASS: TestOrderIndependent (0.46s)
+=== RUN   TestInheritance
+--- PASS: TestInheritance (0.00s)
+=== RUN   TestOracleWithoutInheritanceFails
+    lpm_test.go:325: without inheritance the oracle disagrees on 43801 probes
+--- PASS: TestOracleWithoutInheritanceFails (0.26s)
+PASS
+ok  	github.com/rezmoss/cloudip-bench/lpm	7.673s

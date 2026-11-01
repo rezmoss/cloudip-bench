@@ -1,0 +1,17 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rezmoss/go-cloudip
+cpu: Apple M1 Max
+                               │ /tmp/probe.txt │
+                               │     sec/op     │
+Probe/v4hit/shipped-10              15.78n ± 1%
+Probe/v4hit/branchy-10              27.70n ± 1%
+Probe/v4hit/flatonly-10             80.80n ± 1%
+Probe/v4random/shipped-10           2.971n ± 0%
+Probe/v4random/branchy-10           3.077n ± 1%
+Probe/v4random/flatonly-10          37.40n ± 2%
+Probe/v6hit/shipped-10              75.44n ± 0%
+Probe/v6hit/bisect-10               47.66n ± 1%
+Probe/parse/parseIPv4-10            24.08n ± 1%
+Probe/parse/netip.ParseAddr-10      28.90n ± 9%
+geomean                             22.28n

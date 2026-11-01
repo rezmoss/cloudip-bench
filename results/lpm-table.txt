@@ -1,0 +1,19 @@
+median ns/op               cloudip            bart        bartfast       cidranger          maplen
+Lookup/same                27.2 ns         35.0 ns        22.4 ns*        218.6 ns        149.4 ns
+Lookup/v4hit               60.6 ns         69.8 ns        56.9 ns*        978.0 ns        158.7 ns
+Lookup/v4random           16.7 ns*         21.9 ns         19.1 ns        133.7 ns        568.4 ns
+Lookup/v4mix               45.2 ns         54.5 ns        44.8 ns*        591.5 ns        381.1 ns
+Lookup/v6hit             118.2 ns*        179.6 ns        119.6 ns         1.21 µs        705.3 ns
+IsCloud/same               4.7 ns*         13.5 ns          9.6 ns                                
+IsCloud/v4hit              21.6 ns         27.8 ns        18.8 ns*                                
+IsCloud/v4random           5.3 ns*         17.4 ns         14.1 ns                                
+IsCloud/v4mix              19.1 ns         25.6 ns        18.5 ns*                                
+IsCloud/v6hit              79.2 ns        106.4 ns        63.3 ns*                                
+String/v4hit              64.1 ns*        106.8 ns                                                
+String/v4mix              57.1 ns*         89.7 ns                                                
+String/v6hit             210.0 ns*        283.0 ns                                                
+Parallel/v4mix              5.5 ns          6.4 ns         5.4 ns*         78.2 ns                
+Startup                   50.0 ms*         59.2 ms         60.8 ms        331.5 ms                
+
+* lowest median in the row, not a significance test (see lpm-by-impl.txt)
+Startup: cloudip decodes its own data; the others start from already decoded rows

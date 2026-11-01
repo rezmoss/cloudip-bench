@@ -1,0 +1,19 @@
+File: release.test
+Type: alloc_objects
+Time: 2026-10-31 17:20:25 EDT
+Active filters:
+   focus=Detector\).LookupAddr$
+Showing nodes accounting for 4493913, 26.02% of 17273103 total
+      flat  flat%   sum%        cum   cum%
+   3993910 23.12% 23.12%    3993910 23.12%  github.com/yl2chen/cidranger.(*prefixTrie).containingNetworks
+    333583  1.93% 25.05%     333583  1.93%  net/netip.Addr.AsSlice (inline)
+    166420  0.96% 26.02%     166420  0.96%  github.com/yl2chen/cidranger/net.NewNetworkNumber
+         0     0% 26.02%    4493913 26.02%  github.com/rezmoss/cloudip-bench/release.BenchmarkLookupAddr.func1
+         0     0% 26.02%    4493913 26.02%  github.com/rezmoss/go-cloudip.(*Detector).LookupAddr
+         0     0% 26.02%    4160330 24.09%  github.com/rezmoss/go-cloudip.(*detectorState).lookup
+         0     0% 26.02%    4493913 26.02%  github.com/rezmoss/go-cloudip.(*detectorState).lookupAddr
+         0     0% 26.02%     333583  1.93%  github.com/rezmoss/go-cloudip.netIPToNetIP (inline)
+         0     0% 26.02%    4160330 24.09%  github.com/yl2chen/cidranger.(*prefixTrie).ContainingNetworks
+         0     0% 26.02%    4160330 24.09%  github.com/yl2chen/cidranger.(*versionedRanger).ContainingNetworks
+         0     0% 26.02%    4493913 26.02%  testing.(*B).run1.func1
+         0     0% 26.02%    4493913 26.02%  testing.(*B).runN
